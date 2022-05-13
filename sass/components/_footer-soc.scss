@@ -1,0 +1,19 @@
+.footer-soc__icon {
+  fill: #ffffff;
+}
+.footer-soc__item:not(:first-child) {
+  margin-left: 10px;
+}
+
+.footer-soc__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  transition: getTransition('bgc-transition');
+  &:hover,
+  &:focus {
+    background-color: getColor('link-hover-color');
+  }
+}

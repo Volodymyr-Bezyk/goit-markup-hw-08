@@ -1,0 +1,28 @@
+.clients__title {
+  @extend %title;
+}
+.clients__item:not(:first-child) {
+  margin-left: 30px;
+}
+.clients__link {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  transition: getTransition('border-transition');
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+  }
+}
+.clients__icon {
+  fill: #afb1b8;
+  transition: getTransition('fill-transition');
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: getColor('link-hover-color');
+  }
+}

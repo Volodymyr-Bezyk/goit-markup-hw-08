@@ -1,0 +1,41 @@
+$colors: (
+  'bgc-primary': #ffffff,
+  'bgc-secondary': #f5f4fa,
+  'bgc-accent': #2f303a,
+
+  'text-color': #757575,
+  'text-title-primary-color': #212121,
+  'text-title-secondary-color': #ffffff,
+  'text-accent-color': #2196f3,
+  'text-footer-links-color': rgba(255, 255, 255, 0.6),
+  'text-hover-color': #2196f3,
+
+  'btn-bgc-primary-color': #f5f4fa,
+  'btn-bgc-secondary-color': #2196f3,
+
+  'btn-text-primary-color': #212121,
+  'btn-text-secondary-color': #ffffff,
+  'btn-bgc-hero-hover': #188ce8,
+  'link-hover-color': #2196f3,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
+
+$transitions: (
+  'transform-transition': transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  'color-transition': color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  'bgc-transition': background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  'box-shadow-transition': box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  'fill-transition': fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  'border-transition': border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  'border-color-transition': border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  'opacity-transition': opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  'visability-transition': visibility 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  'bg-image-transition': background-image 250ms cubic-bezier(0.4, 0, 0.2, 1),
+);
+
+@function getTransition($key) {
+  @return map-get($transitions, $key);
+}

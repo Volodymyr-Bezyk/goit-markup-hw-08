@@ -1,0 +1,68 @@
+.footer__form {
+  @media screen and (min-width: 768px) {
+  }
+}
+.footer-form__field {
+  display: block;
+  margin-bottom: 20px;
+}
+.footer-form__input {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 450px;
+  height: 50px;
+  padding: 15px 16px;
+  outline: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  font-size: 16px;
+  color: getColor('text-title-secondary-color');
+
+  transition: getTransition('border-color-transition');
+
+  &:focus {
+    border-color: getColor('link-hover-color');
+  }
+}
+.footer-form__input::placeholder {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form__btn {
+  @extend %btn;
+  padding: 10px 29px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: getColor('btn-text-secondary-color');
+
+  background-color: getColor('btn-bgc-secondary-color');
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  transition: getTransition('bgc-transition');
+
+  &:hover,
+  &:focus {
+    background-color: getColor('btn-bgc-hero-hover');
+  }
+}
+.footer-form__icon {
+  margin-left: 10px;
+  fill: #ffffff;
+}

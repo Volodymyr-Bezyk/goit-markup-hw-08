@@ -1,0 +1,18 @@
+.contacts__link {
+  @include nav-link(getColor('text-color'));
+  display: inline-flex;
+  align-items: center;
+  transition: getTransition('color-transition');
+
+  &:hover,
+  &:focus {
+    color: getColor('text-hover-color');
+  }
+  &:last-child {
+    margin-left: 50px;
+  }
+}
+.contacts__icon {
+  fill: currentColor;
+  margin-right: 10px;
+}

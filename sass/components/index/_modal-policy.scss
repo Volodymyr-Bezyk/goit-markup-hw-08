@@ -1,0 +1,50 @@
+.policy {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: getColor('text-color');
+}
+.policy__agreement {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.policy__check {
+  display: inline-block;
+  margin-right: 8px;
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1.8px solid #212121;
+  background-color: transparent;
+
+  transition: getTransition('border-transition'), getTransition('bg-image-transition'),
+    getTransition('bgc-transition');
+
+  .policy__agreement:focus + & {
+    border: 1.8px solid getColor('link-hover-color');
+  }
+  .policy__agreement:checked + & {
+    background-image: url(../images/optimize-svg/icon-check.svg);
+    background-color: getColor('btn-bgc-secondary-color');
+    border: 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+  }
+}
+.policy__link {
+  text-decoration-line: underline;
+  color: getColor('text-accent-color');
+}

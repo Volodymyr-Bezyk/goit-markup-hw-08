@@ -1,0 +1,33 @@
+body {
+  color: getColor('text-color');
+  background-color: getColor('bgc-primary');
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+body.is-open {
+  overflow: hidden;
+}
+
+.list {
+  list-style: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+}
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}

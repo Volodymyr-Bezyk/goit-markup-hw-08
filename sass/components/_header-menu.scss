@@ -1,0 +1,29 @@
+.menu__item:not(:first-child) {
+  margin-left: 50px;
+}
+.menu__link {
+  @include nav-link(getColor('text-title-primary-color'));
+  transition: getTransition('color-transition');
+
+  &:hover,
+  &:focus {
+    color: getColor('text-hover-color');
+  }
+}
+.menu__link--current {
+  position: relative;
+  color: getColor('text-accent-color');
+
+  &::after {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+
+    background-color: getColor('text-accent-color');
+    border-radius: 2px;
+  }
+}
