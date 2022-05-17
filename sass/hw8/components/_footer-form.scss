@@ -1,10 +1,16 @@
-.footer__form {
-  @media screen and (min-width: 768px) {
+.footer-form {
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    padding-top: 12px;
   }
 }
 .footer-form__field {
   display: block;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 1200px) {
+    display: inline-block;
+  }
 }
 .footer-form__input {
   display: block;
@@ -27,6 +33,10 @@
   &:focus {
     border-color: getColor('link-hover-color');
   }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
 }
 .footer-form__input::placeholder {
   font-weight: 400;
@@ -43,6 +53,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  max-width: 100%;
 
   font-family: inherit;
   font-weight: 700;
@@ -60,6 +71,10 @@
   &:hover,
   &:focus {
     background-color: getColor('btn-bgc-hero-hover');
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
   }
 }
 .footer-form__icon {

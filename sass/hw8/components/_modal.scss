@@ -19,6 +19,10 @@
     transform: translate(-50%, -50%) scale(1.1);
     opacity: 0.5;
   }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
+  }
 }
 
 .modal__btn--closing {
@@ -33,7 +37,6 @@
   justify-content: center;
 
   background-color: #ffffff;
-  padding: 6px;
   cursor: pointer;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -55,6 +58,10 @@
 
   color: getColor('text-title-primary-color');
   margin-bottom: 12px;
+
+  @media screen and (min-width: 1200px) {
+    line-height: 1.15;
+  }
 }
 .modal__form {
   display: flex;

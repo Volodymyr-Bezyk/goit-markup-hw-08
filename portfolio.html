@@ -28,7 +28,7 @@
           <nav class="header__nav navigation">
             <ul class="list flex menu__list">
               <li class="menu__item">
-                <a href="./index.html" class="menu__link">Студия</a>
+                <a href="./index.html" class="menu__link ">Студия</a>
               </li>
               <li class="menu__item">
                 <a href="./portfolio.html" class="menu__link menu__link--current">Портфолио</a>
@@ -69,7 +69,8 @@
           <h1 class="visually-hidden">Каталог</h1>
 
           <!-- BUTTONS FILTER -->
-          <ul class="list works__list">
+          <div class="works__panel">
+            <ul class="list works__list">
             <li class="works__item">
               <button type="button" class="works__button">Все</button>
             </li>
@@ -86,6 +87,7 @@
               <button type="button" class="works__button">Маркетинг</button>
             </li>
           </ul>
+          </div>
 
           <h2 class="visually-hidden">Примеры работ</h2>
 
@@ -94,12 +96,26 @@
             <li class="examples__item">
               <a href="" class="examples__link">
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-website-1350@3x.webp 1350w,
+                        ./images/portfolio-images/img-x2/img-website-900@2x.webp   900w,
+                        ./images/portfolio-images/img-x2/img-website-450.webp      450w
+                      "
+                    />
+                    <img class="examples__img"
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-website-1350@3x.jpg 1350w,
+                        ./images/portfolio-images/img-x2/img-website-900@2x.jpg  9000w,
+                        ./images/portfolio-images/img-x2/img-website-450.jpg      450w
+                      "
                     src="./images/portfolio-images/img-website.jpg"
                     alt="Веб-сайт с 3 карточками"
-                    width="370"
-                  />
+                      sizes="(max-width:767px) 100vw, (min-width:1200px) 33vw, (min-width:768px) 50vw"
+                    />
+                  </picture>
+
                   <p class="examples__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -115,12 +131,25 @@
             <li class="examples__item">
               <a href="" class="examples__link">
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-design-1350@3x.webp 1350w,
+                        ./images/portfolio-images/img-x2/img-design-900@2x.webp   900w,
+                        ./images/portfolio-images/img-x2/img-design-450.webp      450w
+                      "
+                    />
+                    <img  class="examples__img"
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-design-1350@3x.jpg 1350w,
+                        ./images/portfolio-images/img-x2/img-design-900@2x.jpg  9000w,
+                        ./images/portfolio-images/img-x2/img-design-450.jpg      450w
+                      "
                     src="./images/portfolio-images/img-design.jpg"
                     alt="Два баскетболиста с мячем"
-                    width="370"
-                  />
+                      sizes="(max-width:767px) 100vw, (min-width:1200px) 33vw, (min-width:768px) 50vw"
+                    />
+
                   <p class="examples__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -138,12 +167,25 @@
             <li class="examples__item">
               <a href="" class="examples__link">
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-seafood-rest-1350@3x.webp 1350w,
+                        ./images/portfolio-images/img-x2/img-seafood-rest-900@2x.webp   900w,
+                        ./images/portfolio-images/img-x2/img-seafood-rest-450.webp      450w
+                      "
+                    />
+                    <img  class="examples__img"
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-seafood-rest-1350@3x.jpg 1350w,
+                        ./images/portfolio-images/img-x2/img-seafood-rest-900@2x.jpg  9000w,
+                        ./images/portfolio-images/img-x2/img-seafood-rest-450.jpg      450w
+                      "
                     src="./images/portfolio-images/img-seafood-rest.jpg"
                     alt="Логотип ресторана морепродуктов"
-                    width="370"
-                  />
+                      sizes="(max-width:767px) 100vw, (min-width:1200px) 33vw, (min-width:768px) 50vw"
+                    />
+
                   <p class="examples__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -159,12 +201,25 @@
             <li class="examples__item">
               <a href="" class="examples__link">
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-headphone-1350@3x.webp 1350w,
+                        ./images/portfolio-images/img-x2/img-headphone-900@2x.webp   900w,
+                        ./images/portfolio-images/img-x2/img-headphone-450.webp      450w
+                      "
+                    />
+                    <img class="examples__img"
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-headphone-1350@3x.jpg 1350w,
+                        ./images/portfolio-images/img-x2/img-headphone-900@2x.jpg  9000w,
+                        ./images/portfolio-images/img-x2/img-headphone-450.jpg      450w
+                      "
                     src="./images/portfolio-images/img-headphone.jpg"
                     alt="Наушники"
-                    width="370"
-                  />
+                      sizes="(max-width:767px) 100vw, (min-width:1200px) 33vw, (min-width:768px) 50vw"
+                    />
+
                   <p class="examples__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -180,12 +235,25 @@
             <li class="examples__item">
               <a href="" class="examples__link">
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-boxes-1350@3x.webp 1350w,
+                        ./images/portfolio-images/img-x2/img-boxes-900@2x.webp   900w,
+                        ./images/portfolio-images/img-x2/img-boxes-450.webp      450w
+                      "
+                    />
+                    <img class="examples__img"
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-boxes-1350@3x.jpg 1350w,
+                        ./images/portfolio-images/img-x2/img-boxes-900@2x.jpg  9000w,
+                        ./images/portfolio-images/img-x2/img-boxes-450.jpg      450w
+                      "
                     src="./images/portfolio-images/img-boxes.jpg"
                     alt="Две коробки"
-                    width="370"
-                  />
+                      sizes="(max-width:767px) 100vw, (min-width:1200px) 33vw, (min-width:768px) 50vw"
+                    />
+
                   <p class="examples__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -201,12 +269,25 @@
             <li class="examples__item">
               <a href="" class="examples__link">
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-images/img-site-map.jpg"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-site-map-1350@3x.webp 1350w,
+                        ./images/portfolio-images/img-x2/img-site-map-900@2x.webp   900w,
+                        ./images/portfolio-images/img-x2/img-site-map-450.webp      450w
+                      "
+                    />
+                    <img class="examples__img"
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-site-map-1350@3x.jpg 1350w,
+                        ./images/portfolio-images/img-x2/img-site-map-900@2x.jpg  9000w,
+                        ./images/portfolio-images/img-x2/img-site-map-450.jpg      450w
+                      "
+ src="./images/portfolio-images/img-site-map.jpg"
                     alt="Страница сайта с картой мира"
-                    width="370"
-                  />
+                      sizes="(max-width:767px) 100vw, (min-width:1200px) 33vw, (min-width:768px) 50vw"
+                    />
+
                   <p class="examples__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -222,12 +303,25 @@
             <li class="examples__item">
               <a href="" class="examples__link">
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-book-1350@3x.webp 1350w,
+                        ./images/portfolio-images/img-x2/img-book-900@2x.webp   900w,
+                        ./images/portfolio-images/img-x2/img-book-450.webp      450w
+                      "
+                    />
+                    <img class="examples__img"
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-book-1350@3x.jpg 1350w,
+                        ./images/portfolio-images/img-x2/img-book-900@2x.jpg  9000w,
+                        ./images/portfolio-images/img-x2/img-book-450.jpg      450w
+                      "
                     src="./images/portfolio-images/img-book.jpg"
                     alt="Книга"
-                    width="370"
-                  />
+                      sizes="(max-width:767px) 100vw, (min-width:1200px) 33vw, (min-width:768px) 50vw"
+                    />
+
                   <p class="examples__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -243,12 +337,25 @@
             <li class="examples__item">
               <a href="" class="examples__link">
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-images/img-label.jpg"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-label-1350@3x.webp 1350w,
+                        ./images/portfolio-images/img-x2/img-label-900@2x.webp   900w,
+                        ./images/portfolio-images/img-x2/img-label-450.webp      450w
+                      "
+                    />
+                    <img class="examples__img"
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-label-1350@3x.jpg 1350w,
+                        ./images/portfolio-images/img-x2/img-label-900@2x.jpg  9000w,
+                        ./images/portfolio-images/img-x2/img-label-450.jpg      450w
+                      "
+                       src="./images/portfolio-images/img-label.jpg"
                     alt="Бирка"
-                    width="370"
-                  />
+                      sizes="(max-width:767px) 100vw, (min-width:1200px) 33vw, (min-width:768px) 50vw"
+                    />
+
                   <p class="examples__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -264,12 +371,25 @@
             <li class="examples__item">
               <a href="" class="examples__link">
                 <div class="examples__thumb">
-                  <img
-                    class="examples__img"
-                    src="./images/portfolio-images/img-notebook.jpg"
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-notebook-1350@3x.webp 1350w,
+                        ./images/portfolio-images/img-x2/img-notebook-900@2x.webp   900w,
+                        ./images/portfolio-images/img-x2/img-notebook-450.webp      450w
+                      "
+                    />
+                    <img class="examples__img"
+                      srcset="
+                        ./images/portfolio-images/img-x2/img-notebook-1350@3x.jpg 1350w,
+                        ./images/portfolio-images/img-x2/img-notebook-900@2x.jpg  9000w,
+                        ./images/portfolio-images/img-x2/img-notebook-450.jpg      450w
+                      "
+                      src="./images/portfolio-images/img-notebook.jpg"
                     alt="Ноутбук"
-                    width="370"
-                  />
+                      sizes="(max-width:767px) 100vw, (min-width:1200px) 33vw, (min-width:768px) 50vw"
+                    />
+                
                   <p class="examples__description">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -288,7 +408,7 @@
     </main>
 
     <!-- FOOTER  -->
-    <footer class="footer section">
+    <footer class="footer">
       <div class="container">
         <div class="footer__holder">
           <div class="footer__wrap">

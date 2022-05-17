@@ -1,4 +1,5 @@
 .examples {
+  margin: -15px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -7,25 +8,19 @@
 }
 .examples__item {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 15px;
 
   background-color: #ffffff;
   border: 1px solid #eeeeee;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
 
   @media screen and (min-width: 768px) {
-    margin: 15px;
     flex-basis: calc((100% - 30px * 2) / 2);
   }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
 }
-.examples__item:not(:last-child) {
-  margin-bottom: 60px;
-}
-.examples__img {
-  display: block;
-}
+
 .examples__thumb {
   position: relative;
   overflow: hidden;
@@ -56,7 +51,6 @@
 
 .examples__inner {
   padding: 20px 24px;
-  border: 1px solid #eeeeee;
 }
 .examples__subtitle {
   color: getColor('text-title-primary-color');

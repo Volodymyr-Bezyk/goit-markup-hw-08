@@ -4,6 +4,16 @@
 .team__title {
   @extend %title--mobile;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    color: getColor('text-title-primary-color');
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    margin-bottom: 50px;
+  }
 }
 .team__list {
   @media screen and (min-width: 768px) {
@@ -31,22 +41,22 @@
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 2 * 30px) / 2);
     margin: 15px;
-    max-width: 354px;
-    &:nth-last-child(-n + 2) {
-      margin-bottom: 0;
-    }
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
   }
 }
-.team__img {
-  display: block;
-  margin: 0 auto;
-  //   width: 100%;
-}
+
 .team__wrap {
   padding-top: 30px;
   padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .team__subtitle {
   margin-bottom: 10px;

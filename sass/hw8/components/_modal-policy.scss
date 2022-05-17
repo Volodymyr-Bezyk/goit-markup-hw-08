@@ -9,6 +9,11 @@
   letter-spacing: 0.03em;
 
   color: getColor('text-color');
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .policy__agreement {
   position: absolute;

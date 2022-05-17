@@ -139,37 +139,81 @@
       <section class="about section">
         <div class="container">
           <h2 class="about__title">Чем мы занимаемся</h2>
-          <ul class="list flex">
+          <ul class="list about__list">
             <li class="about__item">
               <div class="about__thumb">
-                <img
-                  class="about__img"
-                  src="./images/about-pc.jpg"
-                  alt="Работа с софтом для ПК"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-about/about-pc-1110@3x.webp 1110w,
+                      ./images/img-about/about-pc-740@2x.webp   740w,
+                      ./images/img-about/about-pc-370.webp      370w
+                    "
+                  />
+                  <img
+                    class="about__img"
+                    srcset="
+                      ./images/img-about/about-pc-1110@3x.jpg 1110w,
+                      ./images/img-about/about-pc-740@2x.jpg   740w,
+                      ./images/img-about/about-pc-370.jpg      370w
+                    "
+                    src="./images/about-pc.jpg"
+                    alt="Работа с софтом для ПК"
+                    sizes="(min-width:1200px) 33vw"
+                  />
+                </picture>
+
                 <h3 class="about__text">Десктопные приложения</h3>
               </div>
             </li>
             <li class="about__item">
               <div class="about__thumb">
-                <img
-                  class="about__img"
-                  src="./images/about-phone.jpg"
-                  alt="Работа с софтом для телефона"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-about/about-phone-1110@3x.webp 1110w,
+                      ./images/img-about/about-phone-740@2x.webp   740w,
+                      ./images/img-about/about-phone-370.webp      370w
+                    "
+                  />
+                  <img
+                    class="about__img"
+                    srcset="
+                      ./images/img-about/about-phone-1110@3x.jpg 1110w,
+                      ./images/img-about/about-phone-740@2x.jpg   740w,
+                      ./images/img-about/about-phone-370.jpg      370w
+                    "
+                    src="./images/about-phone.jpg"
+                    alt="Работа с софтом для телефона"
+                    sizes="(min-width:1200px) 33vw"
+                  />
+                </picture>
                 <h3 class="about__text">Мобильные приложения</h3>
               </div>
             </li>
             <li class="about__item">
               <div class="about__thumb">
-                <img
-                  class="about__img"
-                  src="./images/about-tablet.jpg"
-                  alt="Работа с софтом для планшета"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/img-about/about-tablet-1110@3x.webp 1110w,
+                      ./images/img-about/about-tablet-740@2x.webp   740w,
+                      ./images/img-about/about-tablet-370.webp      370w
+                    "
+                  />
+                  <img
+                    class="about__img"
+                    srcset="
+                      ./images/img-about/about-tablet-1110@3x.jpg 1110w,
+                      ./images/img-about/about-tablet-740@2x.jpg   740w,
+                      ./images/img-about/about-tablet-370.jpg      370w
+                    "
+                    src="./images/about-tablet.jpg"
+                    alt="Работа с софтом для планшета"
+                    sizes="(min-width:1200px) 33vw"
+                  />
+                </picture>
+
                 <h3 class="about__text">Дизайнерские решения</h3>
               </div>
             </li>
@@ -183,7 +227,28 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img class="team__img" src="./images/worker-1.jpg" alt="Дизайнер" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-workers-opt/worker1-1350@3x.webp 1350w,
+                    ./images/img-workers-opt/worker1-900@2x.webp   900w,
+                    ./images/img-workers-opt/worker1-450.webp      450w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/img-workers-opt/worker1-1350@3x.jpg 1350w,
+                    ./images/img-workers-opt/worker1-900@2x.jpg   900w,
+                    ./images/img-workers-opt/worker1-450.jpg      450w
+                  "
+                  src="./images/worker-1.jpg"
+                  alt="Дизайнер"
+                  sizes="(max-width:767px) 100vw, (min-width:1200px) 25vw, (min-width:768px) 50vw "
+                />
+              </picture>
+
               <div class="team__wrap">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -236,7 +301,28 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/worker-2.jpg" alt="Разработчик" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-workers-opt/worker2-1350@3x.webp 1350w,
+                    ./images/img-workers-opt/worker2-900@2x.webp   900w,
+                    ./images/img-workers-opt/worker2-450.webp      450w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/img-workers-opt/worker2-1350@3x.jpg 1350w,
+                    ./images/img-workers-opt/worker2-900@2x.jpg   900w,
+                    ./images/img-workers-opt/worker2-450.jpg      450w
+                  "
+                  src="./images/worker-2.jpg"
+                  alt="Разработчик"
+                  sizes="(max-width:767px) 100vw, (min-width:1200px) 25vw, (min-width:768px) 50vw "
+                />
+              </picture>
+
               <div class="team__wrap">
                 <h3 class="team__subtitle">Ольга Репина</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -289,7 +375,28 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/worker-3.jpg" alt="Маркетолог" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-workers-opt/worker3-1350@3x.webp 1350w,
+                    ./images/img-workers-opt/worker3-900@2x.webp   900w,
+                    ./images/img-workers-opt/worker3-450.webp      450w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/img-workers-opt/worker3-1350@3x.jpg 1350w,
+                    ./images/img-workers-opt/worker3-900@2x.jpg   900w,
+                    ./images/img-workers-opt/worker3-450.jpg      450w
+                  "
+                  src="./images/worker-3.jpg"
+                  alt="Маркетолог"
+                  sizes="(max-width:767px) 100vw, (min-width:1200px) 25vw, (min-width:768px) 50vw "
+                />
+              </picture>
+
               <div class="team__wrap">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -342,7 +449,28 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__img" src="./images/worker-4.jpg" alt="Дизайнер" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/img-workers-opt/worker4-1350@3x.webp 1350w,
+                    ./images/img-workers-opt/worker4-900@2x.webp   900w,
+                    ./images/img-workers-opt/worker4-450.webp      450w
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__img"
+                  srcset="
+                    ./images/img-workers-opt/worker4-1350@3x.jpg 1350w,
+                    ./images/img-workers-opt/worker4-900@2x.jpg   900w,
+                    ./images/img-workers-opt/worker4-450.jpg      450w
+                  "
+                  src="./images/worker-4.jpg"
+                  alt="Дизайнер"
+                  sizes="(max-width:767px) 100vw, (min-width:1200px) 25vw, (min-width:768px) 50vw "
+                />
+              </picture>
+
               <div class="team__wrap">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
@@ -451,7 +579,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer section">
+    <footer class="footer">
       <div class="container">
         <div class="footer__holder">
           <div class="footer__wrap">
@@ -567,7 +695,7 @@
             </span>
           </label>
           <label class="modal-form__field"
-            ><span class="modal__name">Комментарий</span
+            ><span class="modal-form__name">Комментарий</span
             ><textarea
               class="modal-form__input modal-form__textarea"
               name="comment"

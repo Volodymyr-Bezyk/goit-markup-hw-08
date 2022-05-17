@@ -15,6 +15,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
     z-index: 998;
 
     transform: translateX(-100%);
@@ -28,6 +30,9 @@
     margin-left: 88px;
     align-items: center;
   }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
 .menu.is-open {
@@ -35,8 +40,6 @@
     pointer-events: initial;
     opacity: 1;
     visibility: visible;
-    width: 100%;
-    height: 100%;
 
     transform: translateX(0);
   }
