@@ -1,5 +1,4 @@
 .examples {
-  margin: -15px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
@@ -8,12 +7,16 @@
 }
 .examples__item {
   display: block;
-  margin: 15px;
-
   background-color: #ffffff;
   border: 1px solid #eeeeee;
 
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
   @media screen and (min-width: 768px) {
+    margin: 15px;
     flex-basis: calc((100% - 30px * 2) / 2);
   }
   @media screen and (min-width: 1200px) {
